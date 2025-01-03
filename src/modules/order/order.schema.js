@@ -23,7 +23,7 @@ const orderSchema = new Schema({
   paid: Boolean,
   hour: Number,
   totalPrice: Number,
-  accept:Boolean
-});
+  accept:Boolean,
+},{ timestamps: true });
 
 export const Order = model("orders", orderSchema);
